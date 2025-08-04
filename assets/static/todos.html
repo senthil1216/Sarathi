@@ -1,0 +1,47 @@
+<!-- todos.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🤖 Assistant — Todos</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body class="p-3">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <a class="navbar-brand" href="/">Assistant</a>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="todos.html">Todos</a>
+      <a class="nav-item nav-link" href="shopping.html">Shopping</a>
+    </div>
+  </nav>
+
+  <!-- Todos Section -->
+  <div class="container">
+    <h2>🗒️ Todos</h2>
+    <!-- Label Management UI -->
+    <div id="label-management" class="mb-3">
+      <h5>Manage Labels:</h5>
+      <div id="label-list" class="mb-2"><!-- badges injected by JS --></div>
+      <form id="label-form" class="form-inline mb-3">
+        <input type="text" id="new-label" class="form-control mr-2" placeholder="New label">
+        <button type="button" id="add-label-btn" class="btn btn-secondary">Add Label</button>
+      </form>
+    </div>
+
+    <form id="todo-form" class="form-inline mb-3">
+      <input type="text" id="new-todo" class="form-control mr-2" placeholder="Add a todo...">
+      <select id="label-select" class="form-control mr-2"></select>
+      <button type="button" id="add-todo-btn" class="btn btn-primary">Add</button>
+    </form>
+    <ul id="todo-list" class="list-group"></ul>
+  </div>
+
+  <!-- JS -->
+  <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/bootstrap.bundle.min.js"></script>
+  <script src="/scripts/todos.js"></script>
+</body>
+</html>

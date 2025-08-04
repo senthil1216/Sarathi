@@ -1,0 +1,38 @@
+<!-- shopping.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🤖 Assistant — Shopping</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body class="p-3">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <a class="navbar-brand" href="/">Assistant</a>
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="todos.html">Todos</a>
+      <a class="nav-item nav-link active" href="shopping.html">Shopping</a>
+    </div>
+  </nav>
+
+  <!-- Shopping Section -->
+  <div class="container">
+    <h2>🛒 Shopping List</h2>
+    <form id="shop-form" class="form-inline mb-3">
+      <input type="text" id="new-shop-item" class="form-control mr-2" placeholder="Item">
+      <input type="number" id="item-qty" class="form-control mr-2" placeholder="Qty" min="1" style="width:80px;">
+      <select id="shopping-category-select" class="form-control mr-2"></select>
+      <button type="button" id="add-shop-btn" class="btn btn-success">Add</button>
+    </form>
+    <ul id="shopping-list" class="list-group"></ul>
+  </div>
+
+  <!-- JS -->
+     <script src="/scripts/jquery-3.6.0.min.js"></script>
+  <script src="/scripts/bootstrap.bundle.min.js"></script>
+  <script src="/scripts/shopping.js"></script>
+</body>
+</html>
