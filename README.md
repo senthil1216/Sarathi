@@ -55,4 +55,4 @@ project-root/
 Feel free to open issues or submit pull requests for new features or bug fixes.
 
 ## License
-MIT © Your Name
+MIT © Senthil Sivasubramanian
